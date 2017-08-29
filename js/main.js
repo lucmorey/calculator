@@ -12,3 +12,10 @@ digits.forEach(function(btn) {
         readout.innerText += this.innerText
     })
 })
+
+var operators = document.querySelectorAll(".operators")
+operators.forEach(function(btn) {
+    btn.addEventListener('click',function() {
+        readout.innerText += this.innerText
+    })
+})
