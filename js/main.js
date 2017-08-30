@@ -29,18 +29,19 @@ digits.forEach(function(btn) {
 	})
 })
 
-// a separate forEach for the operators
+
 operators.forEach(function(btn) {
 	btn.addEventListener('click', function() {
+
         if(firstNumber) {
 		secondNumber = Number(readout.innerText)
 		readout.innerText = evaluate(operator,firstNumber,secondNumber)
-		// change this to store variables that you will eventually use when you click =
-    }
+        }	
+    
     firstNumber = Number(readout.innerText)
     operator = this.innerText
-    readout.innerText =''
-})
+    readout.innerText=''
+    })
 })
 
 equalsBtn.addEventListener('click', function() {
